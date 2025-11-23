@@ -1,0 +1,119 @@
+:root {
+    --general-text: #111111;
+    --accent-text: #000000;
+    --general-color: #111111;
+    --accent-color_2: #C5358C;
+    --color-bg: #f8f8f8;
+    --hover-color: #ABABAB;
+    --border-radius: 3px;
+    --transition: all .8s;
+}
+
+
+
+.body {
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 1.4;
+    font-size: 18px;
+    color: var(--general-text);
+}
+
+.body--opened-modal {
+    overflow: hidden;
+}
+.body--opened-swiper {
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1385px;
+    margin: 0 auto;
+    padding: 0 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.container__categories {
+    width: 100%;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--general-text);
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    flex-direction: row;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.products__inner,
+.about,
+.advantages,
+.categories,
+.questions,
+.news,
+.reviews {
+    margin-top: 150px;
+}
+
+.nav__burger {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: #000000c3;
+    padding: 26vh 15px 30px;
+    font-size: 24px;
+    color: var(--color-bg);
+    scrollbar-width: none;
+
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.nav__list-burger {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    margin-top: 31px;
+    margin-bottom: 35px;
+    flex-direction: column;
+}
+
+.body--opened-menu .nav__burger {
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
