@@ -126,7 +126,7 @@ body {
     opacity: 0;
 
     /* Задержка 0.8s — кнопки поедут, когда колесо почти прилетело */
-    animation: smallSlideUp 0.6s ease-out forwards 0.8s;
+    animation: smallSlideUp 0.6s ease-out forwards 0.7s;
 
     will-change: transform;
 }
@@ -450,7 +450,6 @@ body {
     .hero_head {
         margin-top: 105px;
         gap: 8px;
-
     }
 
     .hero_head-title {
@@ -495,18 +494,18 @@ body {
 
     .hero_footer-title {
         font-family: 'Roboto', sans-serif;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 20px;
         color: #C99CB3;
         text-align: center;
         font-weight: 450;
-        margin-bottom: 21px;
+        margin-bottom: 24px;
     }
 
     .footer_btn {
-        gap: 4px;
-        border-radius: 18px;
-        padding: 10px 12px;
+        gap: 6px;
+        border-radius: 24px;
+        padding: 14px 16px;
         font-size: 12px;
         line-height: 14px;
         margin-bottom: 60px;
